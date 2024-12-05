@@ -1,0 +1,434 @@
+body {
+    font-family: "Times New Roman", sans-serif ;
+    margin: 0;
+    background-image: linear-gradient(to right, #263bb6 , #7c03fc);
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+@font-face {
+    font-family: 'Bariska';
+    src: url('brasika-display-trial.otf') format('truetype');
+}
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 3.3rem;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    background-color: transparent; 
+    padding-right: 3rem; 
+    padding-top: 0.1rem;
+    top: 0;
+    transition: background-color 0.3s ease;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px
+}
+.navbar .diamond {
+    font-size: 2em;
+    color: white;
+    margin-right: 10px;
+}
+.navbar h1 {
+    font-family: 'Bariska', sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+.button {
+    display: flex;
+    gap: 35px;
+    margin-right: 100px;
+}
+.navbar nav {
+    display: flex;
+    align-items: center;
+}
+.navbar nav a {
+    font-family: 'Bariska', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.navbar nav a:hover {
+    color: rgba(227, 133, 236, 1);
+    transition: color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #263bb6 ;
+    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+
+}
+.page{
+    position: static;
+    z-index: 100;
+}
+  .all-content {
+    padding-right: 3rem;
+    list-style-type: none;   
+    display: flex;
+    justify-content: flex-end;      
+  }
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 7rem auto;
+    background-color: #f1f5f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.left-section {
+    background-color: #f1f5f9;
+    color: black;
+    width: 35%;
+    padding: 20px;
+}
+.left-section img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.left-section h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #263bb6;
+
+}
+.left-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+.left-section ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.left-section ul li i {
+    margin-right: 8px;
+    color: #263bb6;
+}
+.left-section h3 {
+    margin: 20px 0 10px;
+    color: #263bb6;
+}
+
+.right-section {
+    padding: 20px;
+    width: 65%;
+}
+.right-section h2 {
+    color: #263bb6;
+    margin-bottom: 10px;
+    font-family: 'Bariska', sans-serif;
+}
+.right-section .section {
+    margin-bottom: 20px;
+    font-size: 1.80rem;
+}
+.right-section .section h3 {
+    font-size: 18px;
+    color: #333;
+}
+.right-section .section p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill-item {
+    background-color: #263bb6;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+}
+
+.right-section-child{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+}
+
+.expertise .skill {
+    margin-bottom: 15px;
+}
+.expertise p {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+}
+.progress-bar .progress {
+    background-color: #263bb6;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease;
+    border-radius: 5px;
+}
+
+/* breakpoint media query*/
+
+@media screen and (max-width: 945px) {
+    .navbar {
+        padding-right: 2rem;
+    }
+
+    .navbar ul {
+        justify-content: center;
+    }
+
+    .container {
+        margin: 6rem auto;
+        max-width: 85%;
+    }
+
+    .left-section {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left-section img {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 15px;
+    }
+    
+
+    .right-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .right-section .skills {
+        gap: 8px;
+    }
+
+    .skill-item {
+        font-size: 13px;
+    }
+
+    .progress-bar {
+        height: 9px;
+    }
+
+    .section{
+        margin: 1rem;
+    }
+}
+
+/* breakpoint media query*/
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+        height: 2rem;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5rem auto;
+        padding: 1rem;
+        max-width: 100%;
+        gap: 10px; 
+        border: 2px solid #263bb6; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+
+    }
+
+    .left-section {
+        flex: 1 1 45%; 
+        padding: 5px;
+    }
+
+    .left-section img {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .left-section h2,
+    .left-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .left-section ul {
+        padding: 0;
+    }
+
+    .left-section ul li {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .right-section {
+        flex: 1 1 50%; 
+        padding: 5px;
+    }
+
+    .right-section h2,
+    .right-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .right-section p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: 5px;
+    }
+
+    .skill-item {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+
+    .progress-bar {
+        height: 5px;
+    }
+
+    .progress {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .navbar {
+        height: auto;
+        
+        padding: 0.5rem;
+    }
+
+    .navbar ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 3rem auto;
+        padding: 1rem;
+        
+    }
+
+    .left-section img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .left-section h2,
+    .right-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .left-section ul li {
+        font-size: 12px;
+    }
+
+    .skill-item {
+        font-size: 10px;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+}
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+}
+
+.footer h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.footer .download-btn {
+    margin-top: 10px;
+}
+
+.footer .download-btn a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #263bb6 , #7c03fc);
+    background: rgb(9,9,121);
+}
+.footer .download-btn a:hover {
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+
+}

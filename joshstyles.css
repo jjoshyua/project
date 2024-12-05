@@ -1,0 +1,198 @@
+body {
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: 'Bariska';
+    src: url('brasika-display-trial.otf') format('truetype');
+}
+
+.title {
+    font-family: 'Bariska', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: left;
+    margin: 5% 5; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 30px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo .diamond {
+    font-size: 2em;
+    color: white;
+}
+
+.logo h1 {
+    font-family: 'Bariska', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    font-family: 'Bariska', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    padding-right: 50px     ;
+}
+
+.nav a:hover {
+    color: rgba(227, 133, 236, 1);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-pic-container {
+    flex: 1;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.text-container {
+    flex: 1;
+    text-align: justify;
+    color: white;
+    animation: slideIn 2s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.title {
+    font-family: 'Bariska', sans-serif;
+    font-size: 4em;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.para    {
+    font-size: 1.3em;
+    color: white;
+    margin: 0;
+    line-height: 1.5rem;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .logo h1 {
+        font-size: 1.2em;
+    }
+    .nav a {
+        font-size: 1.2em;
+        padding-right: 20px;
+    }
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .profile-pic {
+        width: 300px;
+        height: 300px;
+    }
+    .title {
+        font-size: 3em;
+        text-align: center;
+    }
+    .para {
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1em;
+    }
+
+    .nav a {
+        font-size: 1em;
+        padding-right: 10px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+    }
+
+    .title {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .para {
+        font-size: 1.1em;
+        text-align: center;
+    }
+}
